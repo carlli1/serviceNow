@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="form">225691992f150110bd2adc1a2799b664</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-26 02:35:32</sys_created_on>
+        <sys_id>a55791d92f150110bd2adc1a2799b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.form</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_a55791d92f150110bd2adc1a2799b6fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-26 02:35:32</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

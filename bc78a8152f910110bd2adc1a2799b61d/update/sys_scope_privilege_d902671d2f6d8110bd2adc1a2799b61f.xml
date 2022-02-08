@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-07 22:57:09</sys_created_on>
+        <sys_id>d902671d2f6d8110bd2adc1a2799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScriptableSOAPResponse.getAllHeaders</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_scope_privilege_d902671d2f6d8110bd2adc1a2799b61f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-07 22:57:09</sys_updated_on>
+        <target_name>ScriptableSOAPResponse.getAllHeaders</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

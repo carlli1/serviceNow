@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message">
+    <sys_soap_message action="DELETE">
+        <access>package_private</access>
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <description/>
+        <download_wsdl>true</download_wsdl>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <name>weatherdata</name>
+        <protocol_profile/>
+        <sys_class_name>sys_soap_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-27 23:55:37</sys_created_on>
+        <sys_id>f5a543352f950110bd2adc1a2799b69d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>weatherdata</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_soap_message_f5a543352f950110bd2adc1a2799b69d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-27 23:55:37</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <wsdl>https://api.weather.gov/gridpoints/TOP/31,80/forecast</wsdl>
+        <wsdl_xml/>
+    </sys_soap_message>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sys_soap_message_f5a543352f950110bd2adc1a2799b69d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message"><sys_soap_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type/><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description/><download_wsdl>true</download_wsdl><enable_mutual_auth>false</enable_mutual_auth><name>weatherdata</name><protocol_profile/><sys_class_name>sys_soap_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-27 23:55:37</sys_created_on><sys_id>f5a543352f950110bd2adc1a2799b69d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>weatherdata</sys_name><sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package><sys_policy/><sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope><sys_update_name>sys_soap_message_f5a543352f950110bd2adc1a2799b69d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-27 23:55:37</sys_updated_on><use_basic_auth>false</use_basic_auth><wsdl>https://api.weather.gov/gridpoints/TOP/31,80/forecast</wsdl><wsdl_xml/></sys_soap_message></record_update>]]></payload>
+        <payload_hash>1051420702</payload_hash>
+        <record_name>weatherdata</record_name>
+        <reverted_from/>
+        <source>f478a8152f910110bd2adc1a2799b639</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-27 23:55:37</sys_created_on>
+        <sys_id>6ee54b752f950110bd2adc1a2799b6f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e9df74d690000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-27 23:55:37</sys_updated_on>
+        <type>SOAP Message</type>
+        <update_guid>a6e54b7595950110dab38f6ceadeb0f7</update_guid>
+        <update_guid_history>a6e54b7595950110dab38f6ceadeb0f7:1051420702</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-27 23:57:16</sys_created_on>
+        <sys_db_object display_value="" name="sys_soap_message">sys_soap_message</sys_db_object>
+        <sys_id>6e2a222a325742119a8dd372a72eef51</sys_id>
+        <sys_metadata>f5a543352f950110bd2adc1a2799b69d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>weatherdata</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sys_soap_message_f5a543352f950110bd2adc1a2799b69d</sys_update_name>
+        <sys_update_version display_value="sys_soap_message_f5a543352f950110bd2adc1a2799b69d">6ee54b752f950110bd2adc1a2799b6f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-27 23:57:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

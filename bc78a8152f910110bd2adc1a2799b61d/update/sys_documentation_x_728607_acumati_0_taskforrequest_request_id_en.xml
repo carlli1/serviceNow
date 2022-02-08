@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="request_id" label="Request ID" language="en" table="x_728607_acumati_0_taskforrequest">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>request_id</element>
+            <help/>
+            <hint/>
+            <label>Request ID</label>
+            <language>en</language>
+            <name>x_728607_acumati_0_taskforrequest</name>
+            <plural>Request IDs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-26 02:03:14</sys_created_on>
+            <sys_id>94ff49912f150110bd2adc1a2799b62c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Request ID</sys_name>
+            <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+            <sys_update_name>sys_documentation_x_728607_acumati_0_taskforrequest_request_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-26 02:03:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

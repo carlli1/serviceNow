@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_page_property">
+    <sys_ux_page_property action="INSERT_OR_UPDATE">
+        <choices/>
+        <description/>
+        <name>listConfigId</name>
+        <page display_value="AcumaticaServiceNow">cee45d1902150110fa6d42ce16eee0fe</page>
+        <required_translations>[]</required_translations>
+        <route/>
+        <suffix/>
+        <sys_class_name>sys_ux_page_property</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-26 02:24:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>global</sys_domain_path>
+        <sys_id>0ae45d19b2150110d8dfd435fd6c9cff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>listConfigId</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_ux_page_property_0ae45d19b2150110d8dfd435fd6c9cff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-26 02:24:58</sys_updated_on>
+        <type>string</type>
+        <unique_name>x_728607_acumati_0.cee45d1902150110fa6d42ce16eee0fe.root.listConfigId</unique_name>
+        <value>2ee49d192f150110bd2adc1a2799b64a</value>
+    </sys_ux_page_property>
+    <sys_translated_text action="delete_multiple" query="documentkey=0ae45d19b2150110d8dfd435fd6c9cff"/>
+</record_update>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>true</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>message sent!</p>]]></message>
+        <name>testSOAPcountries</name>
+        <order>1</order>
+        <priority>1</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var requestBody;
+	var response;
+    var responseBody;
+    var status;
+    var sm;
+    try {
+        var s = new sn_ws.SOAPMessageV2('countries', 'CountryFlag');
+        s.setStringParameterNoEscape('sCountryISOCode', 'CA');
+        response = s.execute();
+        responseBody = response.getBody();
+        status = response.getStatusCode();
+        responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+        status = response.getStatusCode();
+    } catch (ex) {
+        responseBody = ex.getMessage();
+        status = '500';
+    } finally {
+        requestBody = s ? s.getRequestBody() : null;
+    }
+gs.info("=== Headers starts ====");
+var headers = response.getAllHeaders();
+for(var i in headers){
+  gs.info(headers[i].name + ': ' + headers[i].value);
+}
+var xmldoc = new XMLDocument(response.getBody());
+var incident_sysid = xmldoc.getNodeText('//sys_id');
+	
+	gs.info("Please check system log, the testSOAPcountries has completed");
+    gs.info("***SENT Body: " + requestBody);
+    gs.info("***RECEIVED: " + responseBody);
+    gs.info("***HTTP Status: " + status);
+	gs.info("***Incident ID: " + current.number);
+	gs.info("***Incident ID: " + current.getDisplayValue()); //e.g:***Incident ID: INC0010021
+	gs.info("***short_description: " + current.short_description); //e.g:***Incident ID: INC0010021
+	gs.info("***current: " + current); //e.g:***Incident ID: INC0010021
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-29 17:46:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>621088662f110110bd2adc1a2799b666</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name>testSOAPcountries</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_script_621088662f110110bd2adc1a2799b666</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-07 23:02:54</sys_updated_on>
+        <template/>
+        <when>async_always</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=621088662f110110bd2adc1a2799b666"/>
+</record_update>
