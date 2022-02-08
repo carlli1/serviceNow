@@ -1,4 +1,4 @@
-# ServiceNow Connect to Repository
+# ServiceNow to Github
 ## On Your Laptop
 1, run `ssh-keygen -t rsa -b 4096 -C "carll@ccohs.ca"`
 
