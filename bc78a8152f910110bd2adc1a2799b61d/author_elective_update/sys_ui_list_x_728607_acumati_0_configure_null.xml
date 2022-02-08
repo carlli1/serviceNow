@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list action="DELETE" parent="" relationship="" sys_domain="global" table="x_728607_acumati_0_configure" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_728607_acumati_0_configure" element="NULL" name="x_728607_acumati_0_configure" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dd2a60952f910110bd2adc1a2799b61b</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-25 23:18:06</sys_created_on>
+            <sys_id>192a60952f910110bd2adc1a2799b61d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-25 23:18:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_728607_acumati_0_configure</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2022-01-25 23:18:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dd2a60952f910110bd2adc1a2799b61b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_728607_acumati_0_configure</sys_name>
+            <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+            <sys_update_name>sys_ui_list_x_728607_acumati_0_configure_null</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2022-01-25 23:18:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sys_ui_list_x_728607_acumati_0_configure_null</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_list parent="" relationship="" sys_domain="global" table="x_728607_acumati_0_configure" version="2" view=""><sys_ui_list_element action="INSERT_OR_UPDATE"><average_value>false</average_value><element>number</element><list_id display_value="x_728607_acumati_0_configure" element="NULL" name="x_728607_acumati_0_configure" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">dd2a60952f910110bd2adc1a2799b61b</list_id><max_value>false</max_value><min_value>false</min_value><position>0</position><sum>false</sum><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-25 23:18:06</sys_created_on><sys_id>192a60952f910110bd2adc1a2799b61d</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-25 23:18:06</sys_updated_on></sys_ui_list_element><sys_ui_list action="INSERT_OR_UPDATE"><average_value>false</average_value><element/><max_value>false</max_value><min_value>false</min_value><name>x_728607_acumati_0_configure</name><parent/><position/><relationship/><sum>false</sum><sys_class_name>sys_ui_list</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-25 23:18:06</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dd2a60952f910110bd2adc1a2799b61b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_728607_acumati_0_configure</sys_name><sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package><sys_policy/><sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope><sys_update_name>sys_ui_list_x_728607_acumati_0_configure_null</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-25 23:18:06</sys_updated_on><sys_user/><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_list></sys_ui_list></record_update>]]></payload>
+        <payload_hash>59245278</payload_hash>
+        <record_name>configure</record_name>
+        <reverted_from/>
+        <source>f478a8152f910110bd2adc1a2799b639</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-25 23:18:06</sys_created_on>
+        <sys_id>592a60952f910110bd2adc1a2799b61f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e93883c530000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-25 23:18:06</sys_updated_on>
+        <type>List Layout</type>
+        <update_guid>192a609526910110e13ecd5acb21dd1f</update_guid>
+        <update_guid_history>192a609526910110e13ecd5acb21dd1f:59245278</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-26 01:59:41</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_list">sys_ui_list</sys_db_object>
+        <sys_id>02d0875aff19473381633eea20a9b161</sys_id>
+        <sys_metadata>dd2a60952f910110bd2adc1a2799b61b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_728607_acumati_0_configure</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent display_value="">4899e4552f910110bd2adc1a2799b6f7</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sys_ui_list_x_728607_acumati_0_configure_null</sys_update_name>
+        <sys_update_version display_value="sys_ui_list_x_728607_acumati_0_configure_null">592a60952f910110bd2adc1a2799b61f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-26 01:59:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="form">225691992f150110bd2adc1a2799b664</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-26 02:35:18</sys_created_on>
+        <sys_id>bd4751d92f150110bd2adc1a2799b674</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.form</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_bd4751d92f150110bd2adc1a2799b674</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-26 02:35:18</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sc_cat_item_catalog_bd4751d92f150110bd2adc1a2799b674</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="form">225691992f150110bd2adc1a2799b664</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-26 02:35:18</sys_created_on><sys_id>bd4751d92f150110bd2adc1a2799b674</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.form</sys_name><sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package><sys_policy/><sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope><sys_update_name>sc_cat_item_catalog_bd4751d92f150110bd2adc1a2799b674</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-26 02:35:18</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1532095331</payload_hash>
+        <record_name>Service Catalog.form</record_name>
+        <reverted_from/>
+        <source>f478a8152f910110bd2adc1a2799b639</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-26 02:35:18</sys_created_on>
+        <sys_id>f14751d92f150110bd2adc1a2799b67b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e943cc7380000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-26 02:35:18</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>794751d9981501107364fc715589c17a</update_guid>
+        <update_guid_history>794751d9981501107364fc715589c17a:1532095331</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.form">5d5791d92f150110bd2adc1a2799b6ed</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-26 02:35:32</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>83807585e3e2433d870f2866a4ac11c9</sys_id>
+        <sys_metadata>bd4751d92f150110bd2adc1a2799b674</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.form</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent display_value="form">225691992f150110bd2adc1a2799b664</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_bd4751d92f150110bd2adc1a2799b674</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_bd4751d92f150110bd2adc1a2799b674">f14751d92f150110bd2adc1a2799b67b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-26 02:35:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_parameters">
+    <sys_soap_message_parameters action="DELETE">
+        <name>CountryFlag.sCountryISOCode</name>
+        <soap_function display_value="CountryInfoServiceSoapBinding.CountryFlag">28876e772fd50110bd2adc1a2799b6a0</soap_function>
+        <sys_class_name>sys_soap_message_parameters</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 02:51:47</sys_created_on>
+        <sys_id>b2b76a772fd50110bd2adc1a2799b637</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CountryFlag.sCountryISOCode</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_soap_message_parameters_b2b76a772fd50110bd2adc1a2799b637</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 02:51:47</sys_updated_on>
+        <type>string</type>
+        <value>CA</value>
+    </sys_soap_message_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sys_soap_message_parameters_b2b76a772fd50110bd2adc1a2799b637</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_parameters"><sys_soap_message_parameters action="INSERT_OR_UPDATE"><name>CountryFlag.sCountryISOCode</name><soap_function display_value="CountryInfoServiceSoapBinding.CountryFlag">28876e772fd50110bd2adc1a2799b6a0</soap_function><sys_class_name>sys_soap_message_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-02-03 02:51:47</sys_created_on><sys_id>b2b76a772fd50110bd2adc1a2799b637</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CountryFlag.sCountryISOCode</sys_name><sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package><sys_policy/><sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope><sys_update_name>sys_soap_message_parameters_b2b76a772fd50110bd2adc1a2799b637</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-03 02:51:47</sys_updated_on><type>string</type><value>CA</value></sys_soap_message_parameters></record_update>]]></payload>
+        <payload_hash>2035530803</payload_hash>
+        <record_name>CountryFlag.sCountryISOCode</record_name>
+        <reverted_from/>
+        <source>f478a8152f910110bd2adc1a2799b639</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 02:51:47</sys_created_on>
+        <sys_id>29c762b72fd50110bd2adc1a2799b6a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ebd7ebfef0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 02:51:47</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>61c762b717d501101d586242c62be3a2</update_guid>
+        <update_guid_history>61c762b717d501101d586242c62be3a2:2035530803</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-03 02:54:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_soap_message_parameters">sys_soap_message_parameters</sys_db_object>
+        <sys_id>1301d98bfb1a4287896f65cd13901be9</sys_id>
+        <sys_metadata>b2b76a772fd50110bd2adc1a2799b637</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CountryFlag.sCountryISOCode</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent display_value="">28876e772fd50110bd2adc1a2799b6a0</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sys_soap_message_parameters_b2b76a772fd50110bd2adc1a2799b637</sys_update_name>
+        <sys_update_version display_value="sys_soap_message_parameters_b2b76a772fd50110bd2adc1a2799b637">29c762b72fd50110bd2adc1a2799b6a2</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-03 02:54:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

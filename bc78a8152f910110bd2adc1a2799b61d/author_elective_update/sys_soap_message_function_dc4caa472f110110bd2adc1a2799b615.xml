@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_soap_message_function">
+    <sys_soap_message_function action="DELETE">
+        <authentication_type/>
+        <basic_auth_password/>
+        <basic_auth_profile/>
+        <basic_auth_user/>
+        <certificate/>
+        <enable_mutual_auth>false</enable_mutual_auth>
+        <envelope><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:ListOfCountryNamesByCode/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></envelope>
+        <function_name>CountryInfoServiceSoapBinding.ListOfCountryNamesByCode</function_name>
+        <key_store/>
+        <key_store_alias/>
+        <key_store_password/>
+        <lock>false</lock>
+        <protocol_profile/>
+        <qualified_name>acumaticaSoap [ CountryInfoServiceSoapBinding.ListOfCountryNamesByCode ]</qualified_name>
+        <soap_action/>
+        <soap_endpoint>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso</soap_endpoint>
+        <soap_message display_value="acumaticaSoap">9a1b6a032f110110bd2adc1a2799b6b4</soap_message>
+        <strip_whitespace>false</strip_whitespace>
+        <sys_class_name>sys_soap_message_function</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-31 19:15:55</sys_created_on>
+        <sys_id>dc4caa472f110110bd2adc1a2799b615</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CountryInfoServiceSoapBinding.ListOfCountryNamesByCode</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_soap_message_function_dc4caa472f110110bd2adc1a2799b615</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-31 19:15:55</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_ws_security>false</use_ws_security>
+        <ws_security_type/>
+        <ws_security_username_profile/>
+        <ws_security_x509_profile/>
+    </sys_soap_message_function>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sys_soap_message_function_dc4caa472f110110bd2adc1a2799b615</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_soap_message_function"&gt;&lt;sys_soap_message_function action="INSERT_OR_UPDATE"&gt;&lt;authentication_type/&gt;&lt;basic_auth_password/&gt;&lt;basic_auth_profile/&gt;&lt;basic_auth_user/&gt;&lt;certificate/&gt;&lt;enable_mutual_auth&gt;false&lt;/enable_mutual_auth&gt;&lt;envelope&gt;&lt;![CDATA[&lt;soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo"&gt;
+   &lt;soapenv:Header/&gt;
+   &lt;soapenv:Body&gt;
+      &lt;web:ListOfCountryNamesByCode/&gt;
+   &lt;/soapenv:Body&gt;
+&lt;/soapenv:Envelope&gt;]]&gt;&lt;/envelope&gt;&lt;function_name&gt;CountryInfoServiceSoapBinding.ListOfCountryNamesByCode&lt;/function_name&gt;&lt;key_store/&gt;&lt;key_store_alias/&gt;&lt;key_store_password/&gt;&lt;lock&gt;false&lt;/lock&gt;&lt;protocol_profile/&gt;&lt;qualified_name&gt;acumaticaSoap [ CountryInfoServiceSoapBinding.ListOfCountryNamesByCode ]&lt;/qualified_name&gt;&lt;soap_action/&gt;&lt;soap_endpoint&gt;http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso&lt;/soap_endpoint&gt;&lt;soap_message display_value="acumaticaSoap"&gt;9a1b6a032f110110bd2adc1a2799b6b4&lt;/soap_message&gt;&lt;strip_whitespace&gt;false&lt;/strip_whitespace&gt;&lt;sys_class_name&gt;sys_soap_message_function&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-01-31 19:15:55&lt;/sys_created_on&gt;&lt;sys_id&gt;dc4caa472f110110bd2adc1a2799b615&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;CountryInfoServiceSoapBinding.ListOfCountryNamesByCode&lt;/sys_name&gt;&lt;sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0"&gt;bc78a8152f910110bd2adc1a2799b61d&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="AcumaticaServiceNow"&gt;bc78a8152f910110bd2adc1a2799b61d&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_soap_message_function_dc4caa472f110110bd2adc1a2799b615&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-01-31 19:15:55&lt;/sys_updated_on&gt;&lt;use_basic_auth&gt;false&lt;/use_basic_auth&gt;&lt;use_mid_server/&gt;&lt;use_ws_security&gt;false&lt;/use_ws_security&gt;&lt;ws_security_type/&gt;&lt;ws_security_username_profile/&gt;&lt;ws_security_x509_profile/&gt;&lt;/sys_soap_message_function&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-358449050</payload_hash>
+        <record_name>CountryInfoServiceSoapBinding.ListOfCountryNamesByCode</record_name>
+        <reverted_from/>
+        <source>f478a8152f910110bd2adc1a2799b639</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-31 19:15:55</sys_created_on>
+        <sys_id>544caa472f110110bd2adc1a2799b617</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17eb190aa160000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-31 19:15:55</sys_updated_on>
+        <type>SOAP Message Function</type>
+        <update_guid>9c4caa471f110110839b8fac6ce96216</update_guid>
+        <update_guid_history>9c4caa471f110110839b8fac6ce96216:-358449050</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-31 19:21:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_soap_message_function">sys_soap_message_function</sys_db_object>
+        <sys_id>180a0da6ab224afd82d0cb66c6d0a069</sys_id>
+        <sys_metadata>dc4caa472f110110bd2adc1a2799b615</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CountryInfoServiceSoapBinding.ListOfCountryNamesByCode</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent display_value="acumaticaSoap">9a1b6a032f110110bd2adc1a2799b6b4</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sys_soap_message_function_dc4caa472f110110bd2adc1a2799b615</sys_update_name>
+        <sys_update_version display_value="sys_soap_message_function_dc4caa472f110110bd2adc1a2799b615">544caa472f110110bd2adc1a2799b617</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-31 19:21:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
