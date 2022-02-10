@@ -14,16 +14,1796 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2022-01-31 19:12:11</sys_created_on>
         <sys_id>9a1b6a032f110110bd2adc1a2799b6b4</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_name>acumaticaSoap</sys_name>
         <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
         <sys_policy/>
         <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
         <sys_update_name>sys_soap_message_9a1b6a032f110110bd2adc1a2799b6b4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-07 16:34:20</sys_updated_on>
+        <sys_updated_on>2022-02-10 05:44:28</sys_updated_on>
         <use_basic_auth>false</use_basic_auth>
-        <wsdl>http://webster6/AcumaticaWebServiceDev/AcumaticaWebService.asmx</wsdl>
-        <wsdl_xml/>
+        <wsdl>http://205.193.209.21/AcumaticaWebServiceTest/AcumaticaWebService.asmx?WSDL</wsdl>
+        <wsdl_xml><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://ccohs.ca/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" targetNamespace="http://ccohs.ca/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides web services to interact with Acumatica ERP system.</wsdl:documentation>
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://ccohs.ca/">
+      <s:element name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custCD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inventoryCD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="priceCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCDResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AuthHeader" type="tns:AuthHeader" />
+      <s:complexType name="AuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="GetContractIDByCustomerAndInventoryCD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custCD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inventoryCD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetContractIDByCustomerAndInventoryCDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetContractIDByCustomerAndInventoryCDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubscriptionInfoByContractID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contractID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubscriptionInfoByContractIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubscriptionInfoByContractIDResult" type="tns:SubscriptionInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SubscriptionInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ContractID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EcommAccountID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerClass" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActivationDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExpireDate" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attention" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPhone1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPhone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAttention" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAddress1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAddress2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPostalCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerLanguage" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetCustomerInfoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerInfoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCustomerInfoByIDResult" type="tns:CustomerInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CustomerInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsFederalGovernment" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsTrustedClient" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OnContract" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="FederalDepartmentNo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="LanguageID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Language" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BAccountID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcctCD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxZoneID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EcommID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeneralContactInfo" type="tns:ContactInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingContactInfo" type="tns:ContactInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingContactInfo" type="tns:ContactInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeneralAddressInfo" type="tns:AddressInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAddressInfo" type="tns:AddressInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingAddressInfo" type="tns:AddressInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Locations" type="tns:ArrayOfLocationInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="DefaultPaymentMethod" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="RemainingCreditLimit" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="OTAMemberID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ContactInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Attention" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Position" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Salutation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Web" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AddressInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StateName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountryName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfLocationInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="LocationInfo" nillable="true" type="tns:LocationInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="LocationInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IsActive" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsOTAMember" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSafetyDrivenMember" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeneralContactInfo" type="tns:ContactInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeneralAddressInfo" type="tns:AddressInfo" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsTrusted" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PriceClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxZone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerAcctCD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerBAcctID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerEcommID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerMainLocation" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetOpportunityInfoByID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="id" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOpportunityInfoByIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOpportunityInfoByIDResult" type="tns:OpportunityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OpportunityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessAcctID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EcommRenewalNoticeID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EcommEmailRenewalNotice" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailSentTo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Activities" type="tns:ArrayOfActivityInfo" />
+          <s:element minOccurs="0" maxOccurs="1" name="Products" type="tns:ArrayOfProductItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfActivityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ActivityInfo" nillable="true" type="tns:ActivityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ActivityInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Summary" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActivityType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfProductItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ProductItem" nillable="true" type="tns:ProductItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ProductItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="InventoryID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitPrice" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExtPrice" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Amount" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLocationByCustomerIDAndLocationCD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locationCD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationByCustomerIDAndLocationCDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocationByCustomerIDAndLocationCDResult" type="tns:LocationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ecommAcctID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllContactsByCustomerID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllContactsByCustomerIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllContactsByCustomerIDResult" type="tns:ArrayOfLocationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLocationByCustomerID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="custID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllLocationByCustomerIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllLocationByCustomerIDResult" type="tns:ArrayOfLocationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCustomerLocations">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCustomerLocationsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCustomerLocationsResult" type="tns:ArrayOfCustomerInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCustomerInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CustomerInfo" nillable="true" type="tns:CustomerInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UpdateMembershipStatusInLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="customerCD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="locationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="membershipNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateMembershipStatusInLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateMembershipStatusInLocationResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="InfoReturned">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ValueReturned" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageReturned" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MessageType" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllNonStockInventoryItems">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllNonStockInventoryItemsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllNonStockInventoryItemsResult" type="tns:ArrayOfInventoryItemInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInventoryItemInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="InventoryItemInfo" nillable="true" type="tns:InventoryItemInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="InventoryItemInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DefaultPrice" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="InventoryID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxCategory" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetLocationByCustomerInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="postalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="state" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="country" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone1" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone2" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLocationByCustomerInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetLocationByCustomerInfoResult" type="tns:ArrayOfLocationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRenewalNotices">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="no" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllRenewalNoticesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllRenewalNoticesResult" type="tns:ArrayOfSubscriptionInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSubscriptionInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SubscriptionInfo" nillable="true" type="tns:SubscriptionInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddOpportunity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="opportunity" type="tns:OpportunityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddOpportunityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddOpportunityResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="businessCase" type="tns:CaseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CaseInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClassID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessAcctID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OwnerID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Org" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Severity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Priority" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Activities" type="tns:ArrayOfActivityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddCaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddCaseResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCaseR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="businessCase" type="tns:CaseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCaseRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddCaseRResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCaseR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="businessCase" type="tns:CaseInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCaseRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCaseRResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddLeadR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="newLead" type="tns:LeadInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="LeadInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LeadID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Org" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Province" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Postal" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Source" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Subject" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreatedBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContactClass" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Activities" type="tns:ArrayOfActivityInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddLeadRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddLeadRResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRenewalNoticeToOpportunity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="opportunity" type="tns:OpportunityInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddRenewalNoticeToOpportunityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddRenewalNoticeToOpportunityResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:CustomerInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddCustomerResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cust" type="tns:CustomerInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateCustomerResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddMultipleEcommOrders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ecommOrderList" type="tns:ArrayOfEcommOrder" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfEcommOrder">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EcommOrder" nillable="true" type="tns:EcommOrder" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EcommOrder">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="OrderID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OpportunityID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingOrganization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MembershipNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OTAMemberID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EcommAccountID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingOrganization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingPostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingFax" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CustomerIsTrusted" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="LocationID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFederalGovernment" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubTotal" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="TaxTotal" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShippingTotal" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Total" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="DatePurchased" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingTaxCategory" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingMethod" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PromoCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PromoCodeType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VolumeDiscountCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RenewalNoticeNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EcommAdminID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentTranID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PaymentMethod" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CreditCardNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BankTranID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PONumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APContactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APContactPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APContactEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrganizationCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartmentNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ShipVia" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientShippingAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InvoiceNote" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DuplicatedEcommOrderAllowed" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrderItems" type="tns:ArrayOfEcommOrderItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfEcommOrderItem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="EcommOrderItem" nillable="true" type="tns:EcommOrderItem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="EcommOrderItem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Quantity" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="InventoryCD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContractID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QuantityDiscountCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitPrice" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProductType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalQuantityDiscount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalPromoDiscount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalMembershipDiscount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalOTADiscount" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalQuantityDiscountType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalPromoDiscountType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FinalMembershipDiscountType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OTADiscountType" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddMultipleEcommOrdersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddMultipleEcommOrdersResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUpdateEcommAccount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ecommCustomer" type="tns:EcommAccount" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EcommAccount">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingOrganization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BillingFax" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MembershipNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingFirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingLastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingOrganization" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingPostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingCity" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingProvince" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingCountry" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ShippingFax" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFederalGovernment" type="s:short" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsFederalAgency" type="s:short" />
+          <s:element minOccurs="0" maxOccurs="1" name="APContactName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APContactPhone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="APContactEmail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrganizationCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DepartmentNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISReferenceNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxKey" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerLocation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerEcommID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CustomerMainLocation" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Language" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="OTAMemberID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SafetyDrivenMemberID" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="AddUpdateEcommAccountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddUpdateEcommAccountResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEcommOrder">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ecommOrder" type="tns:EcommOrder" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddEcommOrderResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddEcommOrderResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUpdateLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="locationInfo" type="tns:LocationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddUpdateLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddUpdateLocationResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLocation">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loc" type="tns:LocationInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateLocationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateLocationResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSubscriptionNotice">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="contractID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="notice" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateSubscriptionNoticeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateSubscriptionNoticeResult" type="tns:InfoReturned" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPriceFromPriceWorkSheetByCustomerAndInventoryCD" />
+  </wsdl:message>
+  <wsdl:message name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPriceFromPriceWorkSheetByCustomerAndInventoryCDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetContractIDByCustomerAndInventoryCDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetContractIDByCustomerAndInventoryCD" />
+  </wsdl:message>
+  <wsdl:message name="GetContractIDByCustomerAndInventoryCDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetContractIDByCustomerAndInventoryCDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetContractIDByCustomerAndInventoryCDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriptionInfoByContractIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionInfoByContractID" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriptionInfoByContractIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubscriptionInfoByContractIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubscriptionInfoByContractIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerInfoByIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetOpportunityInfoByIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOpportunityInfoByID" />
+  </wsdl:message>
+  <wsdl:message name="GetOpportunityInfoByIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOpportunityInfoByIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOpportunityInfoByIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByCustomerIDAndLocationCDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocationByCustomerIDAndLocationCD" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByCustomerIDAndLocationCDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocationByCustomerIDAndLocationCDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByCustomerIDAndLocationCDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID" />
+  </wsdl:message>
+  <wsdl:message name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAllContactsByCustomerIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllContactsByCustomerID" />
+  </wsdl:message>
+  <wsdl:message name="GetAllContactsByCustomerIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllContactsByCustomerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllContactsByCustomerIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLocationByCustomerIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllLocationByCustomerID" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLocationByCustomerIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllLocationByCustomerIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllLocationByCustomerIDAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCustomerLocationsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCustomerLocations" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCustomerLocationsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCustomerLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCustomerLocationsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMembershipStatusInLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateMembershipStatusInLocation" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMembershipStatusInLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateMembershipStatusInLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateMembershipStatusInLocationAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAllNonStockInventoryItemsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllNonStockInventoryItems" />
+  </wsdl:message>
+  <wsdl:message name="GetAllNonStockInventoryItemsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllNonStockInventoryItemsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllNonStockInventoryItemsAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByCustomerInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLocationByCustomerInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByCustomerInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLocationByCustomerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLocationByCustomerInfoAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRenewalNoticesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllRenewalNotices" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRenewalNoticesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllRenewalNoticesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllRenewalNoticesAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddOpportunitySoapIn">
+    <wsdl:part name="parameters" element="tns:AddOpportunity" />
+  </wsdl:message>
+  <wsdl:message name="AddOpportunitySoapOut">
+    <wsdl:part name="parameters" element="tns:AddOpportunityResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddOpportunityAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCase" />
+  </wsdl:message>
+  <wsdl:message name="AddCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCaseAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddCaseRSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCaseR" />
+  </wsdl:message>
+  <wsdl:message name="AddCaseRSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCaseRResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCaseRAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCaseRSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCaseR" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCaseRSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCaseRResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCaseRAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddLeadRSoapIn">
+    <wsdl:part name="parameters" element="tns:AddLeadR" />
+  </wsdl:message>
+  <wsdl:message name="AddLeadRSoapOut">
+    <wsdl:part name="parameters" element="tns:AddLeadRResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddLeadRAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddRenewalNoticeToOpportunitySoapIn">
+    <wsdl:part name="parameters" element="tns:AddRenewalNoticeToOpportunity" />
+  </wsdl:message>
+  <wsdl:message name="AddRenewalNoticeToOpportunitySoapOut">
+    <wsdl:part name="parameters" element="tns:AddRenewalNoticeToOpportunityResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddRenewalNoticeToOpportunityAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:AddCustomer" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:AddCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddCustomerAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateCustomer" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateCustomerAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddMultipleEcommOrdersSoapIn">
+    <wsdl:part name="parameters" element="tns:AddMultipleEcommOrders" />
+  </wsdl:message>
+  <wsdl:message name="AddMultipleEcommOrdersSoapOut">
+    <wsdl:part name="parameters" element="tns:AddMultipleEcommOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddMultipleEcommOrdersAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddUpdateEcommAccountSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUpdateEcommAccount" />
+  </wsdl:message>
+  <wsdl:message name="AddUpdateEcommAccountSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUpdateEcommAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUpdateEcommAccountAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddEcommOrderSoapIn">
+    <wsdl:part name="parameters" element="tns:AddEcommOrder" />
+  </wsdl:message>
+  <wsdl:message name="AddEcommOrderSoapOut">
+    <wsdl:part name="parameters" element="tns:AddEcommOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddEcommOrderAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="AddUpdateLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:AddUpdateLocation" />
+  </wsdl:message>
+  <wsdl:message name="AddUpdateLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:AddUpdateLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddUpdateLocationAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLocationSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateLocation" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLocationSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateLocationResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateLocationAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriptionNoticeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateSubscriptionNotice" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriptionNoticeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateSubscriptionNoticeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateSubscriptionNoticeAuthHeader">
+    <wsdl:part name="AuthHeader" element="tns:AuthHeader" />
+  </wsdl:message>
+  <wsdl:portType name="ERP_x0020_Web_x0020_ServiceSoap">
+    <wsdl:operation name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get cutomized price based on customer specific price work sheet in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetPriceFromPriceWorkSheetByCustomerAndInventoryCDSoapIn" />
+      <wsdl:output message="tns:GetPriceFromPriceWorkSheetByCustomerAndInventoryCDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetContractIDByCustomerAndInventoryCD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get contract ID based on customer cd and inventory cd in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetContractIDByCustomerAndInventoryCDSoapIn" />
+      <wsdl:output message="tns:GetContractIDByCustomerAndInventoryCDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionInfoByContractID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get Contract info based on Contract CD in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetSubscriptionInfoByContractIDSoapIn" />
+      <wsdl:output message="tns:GetSubscriptionInfoByContractIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfoByID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get customer info based on Customer Key in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerInfoByIDSoapIn" />
+      <wsdl:output message="tns:GetCustomerInfoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOpportunityInfoByID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get opportunity info based on opportunity ID in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetOpportunityInfoByIDSoapIn" />
+      <wsdl:output message="tns:GetOpportunityInfoByIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCustomerIDAndLocationCD">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get location info based on Customer Key and Location Code in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetLocationByCustomerIDAndLocationCDSoapIn" />
+      <wsdl:output message="tns:GetLocationByCustomerIDAndLocationCDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get trusted and membership status based on Customer Key and Ecomm Account ID in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDSoapIn" />
+      <wsdl:output message="tns:GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContactsByCustomerID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all of the contacts based on Customer ID in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetAllContactsByCustomerIDSoapIn" />
+      <wsdl:output message="tns:GetAllContactsByCustomerIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLocationByCustomerID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all of the locations based on Customer Key in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetAllLocationByCustomerIDSoapIn" />
+      <wsdl:output message="tns:GetAllLocationByCustomerIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCustomerLocations">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all of the customer locations</wsdl:documentation>
+      <wsdl:input message="tns:GetAllCustomerLocationsSoapIn" />
+      <wsdl:output message="tns:GetAllCustomerLocationsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMembershipStatusInLocation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update location with membership status</wsdl:documentation>
+      <wsdl:input message="tns:UpdateMembershipStatusInLocationSoapIn" />
+      <wsdl:output message="tns:UpdateMembershipStatusInLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNonStockInventoryItems">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Export all non-stock inventory items from Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetAllNonStockInventoryItemsSoapIn" />
+      <wsdl:output message="tns:GetAllNonStockInventoryItemsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCustomerInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all of the locations in Acumatica based on Customer information</wsdl:documentation>
+      <wsdl:input message="tns:GetLocationByCustomerInfoSoapIn" />
+      <wsdl:output message="tns:GetLocationByCustomerInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRenewalNotices">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Get all of the renewal notices from Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:GetAllRenewalNoticesSoapIn" />
+      <wsdl:output message="tns:GetAllRenewalNoticesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddOpportunity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a new opportunity in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddOpportunitySoapIn" />
+      <wsdl:output message="tns:AddOpportunitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCase">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a new case in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddCaseSoapIn" />
+      <wsdl:output message="tns:AddCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCaseR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a new case in Acumatica Contract based</wsdl:documentation>
+      <wsdl:input message="tns:AddCaseRSoapIn" />
+      <wsdl:output message="tns:AddCaseRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCaseR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update case from ServiceNow to create work note</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCaseRSoapIn" />
+      <wsdl:output message="tns:UpdateCaseRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddLeadR">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a new lead in Acumatica Contract based</wsdl:documentation>
+      <wsdl:input message="tns:AddLeadRSoapIn" />
+      <wsdl:output message="tns:AddLeadRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddRenewalNoticeToOpportunity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a renewal notice to an opportunity in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddRenewalNoticeToOpportunitySoapIn" />
+      <wsdl:output message="tns:AddRenewalNoticeToOpportunitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add a new Customer in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddCustomerSoapIn" />
+      <wsdl:output message="tns:AddCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Customer in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:UpdateCustomerSoapIn" />
+      <wsdl:output message="tns:UpdateCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddMultipleEcommOrders">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add multiple e-commerce orders from e-commerce system into Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddMultipleEcommOrdersSoapIn" />
+      <wsdl:output message="tns:AddMultipleEcommOrdersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateEcommAccount">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add or update customer account in Acumatica based on e-commerce customer account information</wsdl:documentation>
+      <wsdl:input message="tns:AddUpdateEcommAccountSoapIn" />
+      <wsdl:output message="tns:AddUpdateEcommAccountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddEcommOrder">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add e-commerce order from e-commerce system into Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddEcommOrderSoapIn" />
+      <wsdl:output message="tns:AddEcommOrderSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateLocation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Add/Update Location in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:AddUpdateLocationSoapIn" />
+      <wsdl:output message="tns:AddUpdateLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update Location in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:UpdateLocationSoapIn" />
+      <wsdl:output message="tns:UpdateLocationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriptionNotice">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Update subscription Renewal notice in Acumatica</wsdl:documentation>
+      <wsdl:input message="tns:UpdateSubscriptionNoticeSoapIn" />
+      <wsdl:output message="tns:UpdateSubscriptionNoticeSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ERP_x0020_Web_x0020_ServiceSoap" type="tns:ERP_x0020_Web_x0020_ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCD">
+      <soap:operation soapAction="http://ccohs.ca/GetPriceFromPriceWorkSheetByCustomerAndInventoryCD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPriceFromPriceWorkSheetByCustomerAndInventoryCDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractIDByCustomerAndInventoryCD">
+      <soap:operation soapAction="http://ccohs.ca/GetContractIDByCustomerAndInventoryCD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetContractIDByCustomerAndInventoryCDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionInfoByContractID">
+      <soap:operation soapAction="http://ccohs.ca/GetSubscriptionInfoByContractID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSubscriptionInfoByContractIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfoByID">
+      <soap:operation soapAction="http://ccohs.ca/GetCustomerInfoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCustomerInfoByIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpportunityInfoByID">
+      <soap:operation soapAction="http://ccohs.ca/GetOpportunityInfoByID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOpportunityInfoByIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCustomerIDAndLocationCD">
+      <soap:operation soapAction="http://ccohs.ca/GetLocationByCustomerIDAndLocationCD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetLocationByCustomerIDAndLocationCDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID">
+      <soap:operation soapAction="http://ccohs.ca/GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContactsByCustomerID">
+      <soap:operation soapAction="http://ccohs.ca/GetAllContactsByCustomerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAllContactsByCustomerIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLocationByCustomerID">
+      <soap:operation soapAction="http://ccohs.ca/GetAllLocationByCustomerID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAllLocationByCustomerIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCustomerLocations">
+      <soap:operation soapAction="http://ccohs.ca/GetAllCustomerLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAllCustomerLocationsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMembershipStatusInLocation">
+      <soap:operation soapAction="http://ccohs.ca/UpdateMembershipStatusInLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateMembershipStatusInLocationAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNonStockInventoryItems">
+      <soap:operation soapAction="http://ccohs.ca/GetAllNonStockInventoryItems" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAllNonStockInventoryItemsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCustomerInfo">
+      <soap:operation soapAction="http://ccohs.ca/GetLocationByCustomerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetLocationByCustomerInfoAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRenewalNotices">
+      <soap:operation soapAction="http://ccohs.ca/GetAllRenewalNotices" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAllRenewalNoticesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOpportunity">
+      <soap:operation soapAction="http://ccohs.ca/AddOpportunity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddOpportunityAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCase">
+      <soap:operation soapAction="http://ccohs.ca/AddCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddCaseAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCaseR">
+      <soap:operation soapAction="http://ccohs.ca/AddCaseR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddCaseRAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCaseR">
+      <soap:operation soapAction="http://ccohs.ca/UpdateCaseR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateCaseRAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLeadR">
+      <soap:operation soapAction="http://ccohs.ca/AddLeadR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddLeadRAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRenewalNoticeToOpportunity">
+      <soap:operation soapAction="http://ccohs.ca/AddRenewalNoticeToOpportunity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddRenewalNoticeToOpportunityAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap:operation soapAction="http://ccohs.ca/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddCustomerAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <soap:operation soapAction="http://ccohs.ca/UpdateCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateCustomerAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMultipleEcommOrders">
+      <soap:operation soapAction="http://ccohs.ca/AddMultipleEcommOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddMultipleEcommOrdersAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateEcommAccount">
+      <soap:operation soapAction="http://ccohs.ca/AddUpdateEcommAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddUpdateEcommAccountAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEcommOrder">
+      <soap:operation soapAction="http://ccohs.ca/AddEcommOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddEcommOrderAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateLocation">
+      <soap:operation soapAction="http://ccohs.ca/AddUpdateLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddUpdateLocationAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <soap:operation soapAction="http://ccohs.ca/UpdateLocation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateLocationAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriptionNotice">
+      <soap:operation soapAction="http://ccohs.ca/UpdateSubscriptionNotice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateSubscriptionNoticeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ERP_x0020_Web_x0020_ServiceSoap12" type="tns:ERP_x0020_Web_x0020_ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPriceFromPriceWorkSheetByCustomerAndInventoryCD">
+      <soap12:operation soapAction="http://ccohs.ca/GetPriceFromPriceWorkSheetByCustomerAndInventoryCD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPriceFromPriceWorkSheetByCustomerAndInventoryCDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetContractIDByCustomerAndInventoryCD">
+      <soap12:operation soapAction="http://ccohs.ca/GetContractIDByCustomerAndInventoryCD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetContractIDByCustomerAndInventoryCDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubscriptionInfoByContractID">
+      <soap12:operation soapAction="http://ccohs.ca/GetSubscriptionInfoByContractID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSubscriptionInfoByContractIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerInfoByID">
+      <soap12:operation soapAction="http://ccohs.ca/GetCustomerInfoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCustomerInfoByIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOpportunityInfoByID">
+      <soap12:operation soapAction="http://ccohs.ca/GetOpportunityInfoByID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOpportunityInfoByIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCustomerIDAndLocationCD">
+      <soap12:operation soapAction="http://ccohs.ca/GetLocationByCustomerIDAndLocationCD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetLocationByCustomerIDAndLocationCDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID">
+      <soap12:operation soapAction="http://ccohs.ca/GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetTrustedAndMembershipInfoByCustomerIDAndEcommAccountIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllContactsByCustomerID">
+      <soap12:operation soapAction="http://ccohs.ca/GetAllContactsByCustomerID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAllContactsByCustomerIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllLocationByCustomerID">
+      <soap12:operation soapAction="http://ccohs.ca/GetAllLocationByCustomerID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAllLocationByCustomerIDAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCustomerLocations">
+      <soap12:operation soapAction="http://ccohs.ca/GetAllCustomerLocations" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAllCustomerLocationsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateMembershipStatusInLocation">
+      <soap12:operation soapAction="http://ccohs.ca/UpdateMembershipStatusInLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateMembershipStatusInLocationAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllNonStockInventoryItems">
+      <soap12:operation soapAction="http://ccohs.ca/GetAllNonStockInventoryItems" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAllNonStockInventoryItemsAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLocationByCustomerInfo">
+      <soap12:operation soapAction="http://ccohs.ca/GetLocationByCustomerInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetLocationByCustomerInfoAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllRenewalNotices">
+      <soap12:operation soapAction="http://ccohs.ca/GetAllRenewalNotices" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAllRenewalNoticesAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddOpportunity">
+      <soap12:operation soapAction="http://ccohs.ca/AddOpportunity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddOpportunityAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCase">
+      <soap12:operation soapAction="http://ccohs.ca/AddCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddCaseAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCaseR">
+      <soap12:operation soapAction="http://ccohs.ca/AddCaseR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddCaseRAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCaseR">
+      <soap12:operation soapAction="http://ccohs.ca/UpdateCaseR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateCaseRAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddLeadR">
+      <soap12:operation soapAction="http://ccohs.ca/AddLeadR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddLeadRAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddRenewalNoticeToOpportunity">
+      <soap12:operation soapAction="http://ccohs.ca/AddRenewalNoticeToOpportunity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddRenewalNoticeToOpportunityAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddCustomer">
+      <soap12:operation soapAction="http://ccohs.ca/AddCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddCustomerAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateCustomer">
+      <soap12:operation soapAction="http://ccohs.ca/UpdateCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateCustomerAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddMultipleEcommOrders">
+      <soap12:operation soapAction="http://ccohs.ca/AddMultipleEcommOrders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddMultipleEcommOrdersAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateEcommAccount">
+      <soap12:operation soapAction="http://ccohs.ca/AddUpdateEcommAccount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddUpdateEcommAccountAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddEcommOrder">
+      <soap12:operation soapAction="http://ccohs.ca/AddEcommOrder" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddEcommOrderAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUpdateLocation">
+      <soap12:operation soapAction="http://ccohs.ca/AddUpdateLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddUpdateLocationAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateLocation">
+      <soap12:operation soapAction="http://ccohs.ca/UpdateLocation" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateLocationAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateSubscriptionNotice">
+      <soap12:operation soapAction="http://ccohs.ca/UpdateSubscriptionNotice" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateSubscriptionNoticeAuthHeader" part="AuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ERP_x0020_Web_x0020_Service">
+    <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Provides web services to interact with Acumatica ERP system.</wsdl:documentation>
+    <wsdl:port name="ERP_x0020_Web_x0020_ServiceSoap" binding="tns:ERP_x0020_Web_x0020_ServiceSoap">
+      <soap:address location="http://205.193.209.21/AcumaticaWebServiceTest/AcumaticaWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ERP_x0020_Web_x0020_ServiceSoap12" binding="tns:ERP_x0020_Web_x0020_ServiceSoap12">
+      <soap12:address location="http://205.193.209.21/AcumaticaWebServiceTest/AcumaticaWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></wsdl_xml>
     </sys_soap_message>
 </record_update>
