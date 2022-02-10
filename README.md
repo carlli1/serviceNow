@@ -1,13 +1,15 @@
 # ServiceNow to Github
 ## On Your Laptop
-1, run `ssh-keygen -t rsa -b 4096 -C "carll@ccohs.ca"`
+1, run `ssh-keygen -t rsa -b 4096 -C "rest@test"`
 
 2, Will generate two files, id_rsa (private key) + id_rsa.pub (public key)
 ## On Github.com
 1, Add public key by copy/paste the content of id_rsa.pub
 ## In Studio of ServiceNow
-1, Create a credential, "github-sshkey", copy/paste private key from id_rsa.
-![image](https://user-images.githubusercontent.com/89544426/152921677-740ad37f-b271-40b3-b170-90b68177943f.png)
+1, Create a credential, "key", copy/paste private key from id_rsa.
+
+![image](https://user-images.githubusercontent.com/89544426/153349412-0c05f2d5-5b13-47ed-9ef8-4177c1cdc837.png)
+
 
 The password will be auto pupulated when SSH Private Key is filled.
 
@@ -17,9 +19,9 @@ The password will be auto pupulated when SSH Private Key is filled.
 
 3, Click "link to source control"
 
-4, Copy/Paste URL "git@github.com:carlli1/serviceNow.git"
+4, Copy/Paste URL "git@github.com:[repo]"
 
-5, Select Credential,"github-sshkey"
+5, Select Credential,"key"
 
 6, Click " connect Link" Button.
 
