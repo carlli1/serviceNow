@@ -23,5 +23,7 @@ The password will be auto pupulated when SSH Private Key is filled.
 
 6, Click " connect Link" Button.
 
+refer to : `https://developer.servicenow.com/dev.do#!/guides/rome/developer-program/github-guide/troubleshooting-github-issues`
+
 Done.
 
