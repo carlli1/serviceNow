@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <internal_name>create_acumatica_case_when_incident_is_created</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>create acumatica case when incident is created</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-25 23:22:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3e1b6c952f910110bd2adc1a2799b6ae</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>create acumatica case when incident is created</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_hub_flow_3e1b6c952f910110bd2adc1a2799b6ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 19:19:58</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=3e1b6c952f910110bd2adc1a2799b6ae"/>
+    <sys_variable_value action="DELETE" query="document_key=3e1b6c952f910110bd2adc1a2799b6ae"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=3e1b6c952f910110bd2adc1a2799b6ae^sys_idNOT INf61b6c952f910110bd2adc1a2799b6b1"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>3e1b6c952f910110bd2adc1a2799b6ae</id>
+        <name>create acumatica case when incident is created</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-25 23:22:18</sys_created_on>
+        <sys_id>f61b6c952f910110bd2adc1a2799b6b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-25 23:22:18</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sys_hub_flow_3e1b6c952f910110bd2adc1a2799b6ae</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from><copied_from_name>FlowTemplate_Empty</copied_from_name><description/><internal_name>create_acumatica_case_when_incident_is_created</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>create acumatica case when incident is created</name><natlang/><outputs/><remote_trigger_id/><run_as>user</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-25 23:22:18</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3e1b6c952f910110bd2adc1a2799b6ae</sys_id><sys_mod_count>4</sys_mod_count><sys_name>create acumatica case when incident is created</sys_name><sys_overrides/><sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package><sys_policy>read</sys_policy><sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope><sys_update_name>sys_hub_flow_3e1b6c952f910110bd2adc1a2799b6ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-02-11 19:19:58</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=3e1b6c952f910110bd2adc1a2799b6ae"/><sys_variable_value action="delete_multiple" query="document_key=3e1b6c952f910110bd2adc1a2799b6ae"/><sys_flow_cat_variable_model action="delete_multiple" query="id=3e1b6c952f910110bd2adc1a2799b6ae^sys_idNOT INf61b6c952f910110bd2adc1a2799b6b1"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>3e1b6c952f910110bd2adc1a2799b6ae</id><name>create acumatica case when incident is created</name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-25 23:22:18</sys_created_on><sys_id>f61b6c952f910110bd2adc1a2799b6b1</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-25 23:22:18</sys_updated_on></sys_flow_cat_variable_model></record_update>]]></payload>
+        <payload_hash>-223749286</payload_hash>
+        <record_name>create acumatica case when incident is created</record_name>
+        <reverted_from/>
+        <source>1651bc612f61c110bd2adc1a2799b681</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 19:19:58</sys_created_on>
+        <sys_id>47a61f262fed4110bd2adc1a2799b64b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17eea3a563c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 19:19:58</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>4fa61f26eeed411093f2f2ae30be434a</update_guid>
+        <update_guid_history>4fa61f26eeed411093f2f2ae30be434a:-223749286,41ec0bca8ba5011099e867a712b4ef34:0,22906e4a90250110d0d8a7eb4ecda13d:1190497977,c8dd9151c5550110cd7597865c6d76c9:592178077,acad1151d55501108db12027e39ebd83:-223749286,761b6c955d910110f746b88f544dcdb5:1922919190</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 19:22:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>355be7303fcf41c4b7d507704d402ba4</sys_id>
+        <sys_metadata>3e1b6c952f910110bd2adc1a2799b6ae</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>create acumatica case when incident is created</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_3e1b6c952f910110bd2adc1a2799b6ae</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_3e1b6c952f910110bd2adc1a2799b6ae">47a61f262fed4110bd2adc1a2799b64b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 19:22:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

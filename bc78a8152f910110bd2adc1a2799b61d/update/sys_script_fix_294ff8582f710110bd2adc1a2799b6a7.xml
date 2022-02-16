@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description/>
+        <name>z_sys_script_log_object</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[function logObj(currentObj, indicator) {
+	var str ='Object Contents:\n';
+    for (key in currentObj) {
+        if (typeof currentObj[key] != "function") {
+            str =  str + key + ":: " + currentObj[key].toString() +'\n';
+        } else {
+            logObj(currentObj[key], indicator);
+        }
+    }
+	gs.info(indicator + str);
+}
+//test script
+var str = '';
+var current=[];
+current[0] = 'A';
+current[1] = 'B';
+current[2] = 'C';
+logObj(current, '****');]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-16 18:49:49</sys_created_on>
+        <sys_id>294ff8582f710110bd2adc1a2799b6a7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>z_sys_script_log_object</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_script_fix_294ff8582f710110bd2adc1a2799b6a7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-16 19:18:31</sys_updated_on>
+        <unloadable>false</unloadable>
+    </sys_script_fix>
+</record_update>

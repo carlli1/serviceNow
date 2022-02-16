@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>acuaction</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>acu-action</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-28 01:09:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1e6d7f12fd50110bd2adc1a2799b68b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acu-action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_d1e6d7f12fd50110bd2adc1a2799b68b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-28 01:09:48</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=d1e6d7f12fd50110bd2adc1a2799b68b"/>
+    <sys_variable_value action="DELETE" query="document_key=d1e6d7f12fd50110bd2adc1a2799b68b"/>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</application>
+        <file_path/>
+        <instance_id>16f459c0db10ff4052cec59705961902</instance_id>
+        <instance_name>dev75066</instance_name>
+        <name>sys_hub_action_type_definition_d1e6d7f12fd50110bd2adc1a2799b68b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>acuaction</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>acu-action</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-28 01:09:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d1e6d7f12fd50110bd2adc1a2799b68b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acu-action</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_d1e6d7f12fd50110bd2adc1a2799b68b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-28 01:09:48</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=d1e6d7f12fd50110bd2adc1a2799b68b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d1e6d7f12fd50110bd2adc1a2799b68b"/>
+</record_update>]]></payload>
+        <payload_hash>708795731</payload_hash>
+        <record_name>acu-action</record_name>
+        <reverted_from/>
+        <source>6adc47ca2fa50110bd2adc1a2799b649</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-10 05:20:16</sys_created_on>
+        <sys_id>fcec0bca2fa50110bd2adc1a2799b614</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ee213351c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-10 05:20:16</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>3cec0bca1da50110cfd769055f839414</update_guid>
+        <update_guid_history>3cec0bca1da50110cfd769055f839414:0,47d0228aac2501107fa73f4057ac9cc1:-998998002,9de69335d8d50110e1125288f13065f9:-2058806629</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-11 19:23:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>8d745bfb295d49808a9b9f1ce0c41000</sys_id>
+        <sys_metadata>d1e6d7f12fd50110bd2adc1a2799b68b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>acu-action</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_scope_delete display_value="">97ebb2739edb477d9845ce271768bd79</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_d1e6d7f12fd50110bd2adc1a2799b68b</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_d1e6d7f12fd50110bd2adc1a2799b68b">fcec0bca2fa50110bd2adc1a2799b614</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-11 19:23:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

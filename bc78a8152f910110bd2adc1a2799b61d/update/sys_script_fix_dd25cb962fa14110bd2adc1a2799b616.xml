@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_fix">
+    <sys_script_fix action="INSERT_OR_UPDATE">
+        <before>false</before>
+        <description>XMLDocument2</description>
+        <name>z_sys_script_XMLDocument2</name>
+        <record_for_rollback>false</record_for_rollback>
+        <script><![CDATA[var xmlstr = '<?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><UpdateCaseRResponse xmlns="http://ccohs.ca/"><UpdateCaseRResult><ValueReturned>135774</ValueReturned><MessageReturned /><MessageType>1</MessageType></UpdateCaseRResult></UpdateCaseRResponse></soap:Body></soap:Envelope>';
+var xmlDoc = new XMLDocument2();
+xmlDoc.parseXML(xmlstr);
+var ValueReturned = xmlDoc.getNodeText('/soap:Envelope/soap:Body/UpdateCaseRResponse/UpdateCaseRResult/ValueReturned');
+var MessageType = xmlDoc.getNodeText('/soap:Envelope/soap:Body/UpdateCaseRResponse/UpdateCaseRResult/MessageType');
+gs.info("***fixScript1***" + ValueReturned);
+gs.info("***fixScript2***" + MessageType);
+
+// var cr = new acu_credential();
+// gs.info(cr.getPassword());
+]]></script>
+        <sys_class_name>sys_script_fix</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-02-10 23:28:18</sys_created_on>
+        <sys_id>dd25cb962fa14110bd2adc1a2799b616</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>z_sys_script_XMLDocument2</sys_name>
+        <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
+        <sys_update_name>sys_script_fix_dd25cb962fa14110bd2adc1a2799b616</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-02-15 17:50:25</sys_updated_on>
+        <unloadable>true</unloadable>
+    </sys_script_fix>
+</record_update>

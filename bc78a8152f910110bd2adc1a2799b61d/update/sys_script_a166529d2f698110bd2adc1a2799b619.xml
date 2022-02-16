@@ -6,7 +6,7 @@
         <action_insert>false</action_insert>
         <action_query>false</action_query>
         <action_update>true</action_update>
-        <active>true</active>
+        <active>false</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
         <change_fields>false</change_fields>
@@ -27,11 +27,64 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+    var requestBody;
+    var response;
+    var responseBody;
+    var status;
+    var sm;
+    var ac = new app_credential();
+    gs.info("*** SOAPMessage is triggered");
+    try {
+        var s = new sn_ws.SOAPMessageV2('acumaticaSoap', 'UpdateCaseR');
+        s.setStringParameterNoEscape('AuthHeader.Password', ac.getPassword());
+        s.setStringParameterNoEscape('AuthHeader.UserName', ac.getUserName());
+        s.setStringParameterNoEscape('businessCase.ID', current.u_acu_case_id);
+        s.setStringParameterNoEscape('businessCase.Status', 'N/A');
+        s.setStringParameterNoEscape('businessCase.Subject', 'ServiceNow Note' + current.number + current.u_acu_case_id);
+        s.setStringParameterNoEscape('businessCase.Description', current.number + current.comments.getJournalEntry(2));
+        response = s.execute();
+        status = response.getStatusCode();
+        responseBody = response.haveError() ? response.getErrorMessage() : response.getBody();
+        status = response.getStatusCode();
+    } catch (ex) {
+        gs.info("***exception: " + ex.getMessage());
+        responseBody = ex.getMessage();
+        status = '500';
+    } finally {
+        requestBody = s ? s.getRequestBody() : null;
+    }
+    gs.info('*1**SENT: {0}',requestBody);
+    gs.info('*2**RECEIVED: {0}', responseBody);
+    // gs.info("*3**HTTP Status: " + status);
+    gs.info("*4**Incident ID: " + current.number); //Incident ID: INC0010021
+    gs.info("*5**comments: " + current.comments.getJournalEntry(1));
+    //gs.info("*5**work_notes: " + current.work_notes.getJournalEntry(2));
+    //gs.info("*6**current is: " + current);
+    // 
+    //var xmldoc = new XMLDocument(responseBody);
+    // var incident_sysid = xmldoc.getNodeText('//sys_id');
+    //gs.info("*7**incident_sysid", xmldoc);
+    var xmlDoc = new XMLDocument2();
+    xmlDoc.parseXML(responseBody);
+    var rootNode = xmlDoc.getDocumentElement();
+    gs.info("**8**" + rootNode.getTextContent());
+//     rootNode = xmlDoc.getNodeText("//AddCaseRResult");
+//     gs.info("**9**" + rootNode.getTextContent());
+//     var ValueReturned = xmldoc.getNodeText("///ValueReturned");
+//     gs.info("*9**ValueReturned= ", ValueReturned);
 
-	gs.addInfoMessage("testmessage triggered");
-	gs.addInfoMessage("Please check App log, the testSOAPcountries has completed");
-
+    function logObj(currentObj, indicator) {
+        for (key in currentObj) {
+            if (typeof currentObj[key] != "function") {
+                gs.info(indicator + key + ":: " + currentObj[key].toString());
+            } else {
+                logObj(currentObj[key], indicator);
+            }
+        }
+    }
+    logObj(current, '*7**');
+	
 })(current, previous);]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -39,7 +92,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a166529d2f698110bd2adc1a2799b619</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>81</sys_mod_count>
         <sys_name>testmessage</sys_name>
         <sys_overrides/>
         <sys_package display_value="AcumaticaServiceNow" source="x_728607_acumati_0">bc78a8152f910110bd2adc1a2799b61d</sys_package>
@@ -47,9 +100,9 @@
         <sys_scope display_value="AcumaticaServiceNow">bc78a8152f910110bd2adc1a2799b61d</sys_scope>
         <sys_update_name>sys_script_a166529d2f698110bd2adc1a2799b619</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-02-07 17:36:45</sys_updated_on>
+        <sys_updated_on>2022-02-16 02:11:10</sys_updated_on>
         <template/>
-        <when>before</when>
+        <when>async_always</when>
     </sys_script>
     <sys_translated_text action="delete_multiple" query="documentkey=a166529d2f698110bd2adc1a2799b619"/>
 </record_update>
