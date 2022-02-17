@@ -1,6 +1,6 @@
 # ServiceNow to Github
 ## On Your Laptop
-1, run `ssh-keygen -t rsa -b 4096 -C "rest@test"`
+1, run `ssh-keygen -t rsa -b 4096 -C "[YOUREMAIL]"`
 
 2, Will generate two files, id_rsa (private key) + id_rsa.pub (public key)
 ## On Github.com
